@@ -1,3 +1,20 @@
-.mydiv{
-    color: rebeccapurple;
+.importBtn{
+    position: relative;
+    left: -10px;
+    top: 208px;
+}
+.help-tip{
+    pointer-events: none;
+}
+.help-tip:after{
+    pointer-events: auto;
+    content: "?";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0px 7px;
+    top:5px;
+    background-color: rgba(149, 200, 250, 0.611);
+    position: relative;
+    display: inline;
 }
