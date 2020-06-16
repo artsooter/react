@@ -10,17 +10,15 @@
 /* eslint-disable no-console */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import 'shineout/dist/theme.default.css';
 import { Table, Button, Form, Input } from 'shineout';
 import { connect, Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { func } from 'shineout/lib/utils';
-import { store, toDo } from './myRedux';
+import { store, toDo } from '../myRedux';
 import { Tool } from './tool';
 import { StdSelect } from './stdSelect';
 import { ClassTable, StudentTable } from './classTable';
-import { MainDiv } from './gitView';
 
 
 function ManagerTable(props) {
@@ -113,7 +111,8 @@ export class MainTable extends React.Component {
   }
 
   addHandle(data) {
-    const studentData = data.id ? data : Object.assign(data, this.tool.nextStudentId);
+    console.log(data);
+    const studentData = (data.id !== undefined) ? data : Object.assign(data, this.tool.nextStudentId);
     const res = this.tool.addHandle(studentData);
     this.setState({
       studentDataArray: res,

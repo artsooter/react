@@ -16,13 +16,11 @@ import { Table, Button, Form, Input } from 'shineout';
 // eslint-disable-next-line import/extensions
 import { connect, Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { MainDiv } from './git/gitView';
+import { MainTable } from './sc/mainTable';
 import { store, toDo } from './myRedux';
 // import { ClassTable } from './classTable';
-import { Tool } from './tool';
-import { StdSelect } from './stdSelect';
-import { ClassTable, StudentTable } from './classTable';
-import { MainDiv } from './gitView';
-import { MainTable } from './mainTable';
+import { ClassTable, StudentTable } from './sc/classTable';
 
 
 function App(props) {

@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 /* eslint-disable import/no-mutable-exports */
 /* eslint-disable prefer-const */
-import { store } from './myRedux';
+import { store } from '../myRedux';
 
 const getStudentDataArray = () => [...store.getState().infMap].map(ele => Object.assign({}, ele[1], { id: ele[0] }));
 
@@ -23,6 +23,7 @@ export class Tool {
   }
 
   addHandle(studentData) {
+    console.log(studentData);
     store.dispatch({
       type: 'add',
       studentData,

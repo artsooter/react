@@ -2,7 +2,7 @@ import React from 'react';
 import { Table, Button } from 'shineout';
 import { connect } from 'redux';
 import { StdSelect } from './stdSelect';
-import { toDo, store } from './myRedux';
+import { toDo, store } from '../myRedux';
 
 export function StdTable(props) {
   const columns = [

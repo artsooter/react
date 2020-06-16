@@ -14,7 +14,7 @@ import { Table, Button, Form, Input, Select } from 'shineout';
 import React from 'react';
 import { connect } from 'react-redux';
 import { element } from 'shineout/lib/utils';
-import { store, toDo } from './myRedux';
+import { store, toDo } from '../myRedux';
 import { StdSelect } from './stdSelect';
 import { Tool } from './tool';
 

@@ -14,12 +14,11 @@
 /* eslint-disable no-console */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import 'shineout/dist/theme.default.css';
 import { Button, Form, Input, Card } from 'shineout';
 import { color } from 'shineout/lib/utils';
 import { connect } from 'react-redux';
-import { store } from './myRedux';
+import { store } from '../myRedux';
 // import { gitTodo } from './gitTodo';
 
 function NewDiv(props) {
