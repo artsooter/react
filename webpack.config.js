@@ -9,8 +9,11 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   devServer: {
+    port: 3000,
     contentBase: './dist',
     historyApiFallback: true,
+    host: '0.0.0.0',
+    hot: true,
   },
   module: {
     rules: [
